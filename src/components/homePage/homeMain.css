@@ -1,0 +1,87 @@
+.home-con {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.home-con .mainback {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.home-con .mainback .home-title-con {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home-con .mainback .home-title-con h4 {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 26px;
+}
+.home-con .mainback .home-title-con .home-titlr-button {
+  margin: 10px 0;
+  padding: 10px 15px;
+  border: 1px solid white;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms ease-in;
+}
+.home-con .mainback .home-title-con .home-titlr-button .home-ancher {
+  transition: 200ms ease-in;
+  background-color: #fff;
+  height: 1px;
+  width: 0px;
+}
+.home-con .mainback .home-title-con .home-titlr-button:hover {
+  transition: 200ms ease-in;
+}
+.home-con .mainback .home-title-con .home-titlr-button:hover .home-ancher {
+  transition: 200ms ease-in;
+  background-color: #fff;
+  height: 1px;
+  width: 30px;
+}
+.home-con .mainback .home-title-con .home-titlr-button p {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.home-con .mainback .home-title-con h1 {
+  font-size: 55px;
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.8px;
+  padding: 15px 0 50px 0;
+}
+.home-con .mainback .home-title-con .fill-div {
+  width: 400px;
+  height: 1px;
+  background-color: rgb(192, 192, 192);
+  margin: 20px 0;
+}
+.home-con .mainback .home-title-con .fill-div::after {
+  content: " ";
+  width: 400px;
+  position: relative;
+  position: absolute;
+  background: white;
+  height: 1px;
+  animation: fillSlow 15s infinite;
+}
+
+@keyframes fillSlow {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}/*# sourceMappingURL=homeMain.css.map */
